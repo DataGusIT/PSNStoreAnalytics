@@ -18,7 +18,7 @@ Diferente de scrapers simples, este projeto implementa um pipeline completo: col
 
 | Distribuição de Preços | Top 10 Jogos Mais Caros | Melhores Oportunidades (%) |
 | :---: | :---: | :---: |
-| <img width="400" alt="Histograma de Preços" src="INSIRA_LINK_DA_IMAGEM_HISTOGRAMA_AQUI" /> | <img width="400" alt="Gráfico de Barras Jogos Caros" src="INSIRA_LINK_DA_IMAGEM_TOP10_AQUI" /> | <img width="400" alt="Gráfico de Descontos" src="INSIRA_LINK_DA_IMAGEM_DESCONTOS_AQUI" /> |
+| <img width="1021" height="573" alt="Image" src="https://github.com/user-attachments/assets/565525ed-a0e7-4733-8ab8-8adc91d1ce03" /> | <img width="1477" height="709" alt="Image" src="https://github.com/user-attachments/assets/11c1950d-42ef-481c-8557-be74fa7192b4" /> | <img width="1444" height="554" alt="Image" src="https://github.com/user-attachments/assets/7d74b7ff-64d4-46a4-befc-d559461c4dd5" /> |
 
 ## ✨ Funcionalidades
 
