@@ -1,0 +1,19 @@
+# Scraping
+playwright
+beautifulsoup4
+requests
+
+# Dados e Análise
+pandas
+numpy
+matplotlib
+seaborn
+
+# Utilidades
+python-dotenv
+tqdm  # Barra de progresso visual
+schedule # Para agendamento simples
+
+# Desenvolvimento / Notebooks
+ipykernel
+jupyter
