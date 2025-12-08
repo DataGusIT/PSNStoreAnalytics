@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 # Constante para URL de ofertas da PSN
 BASE_URL_DEALS = "https://store.playstation.com/pt-br/category/3f772501-f6f8-49b7-abac-874a88ca4897"
 
-def scrape_psn(max_pages=5):
+def scrape_psn(max_pages=182):
     """
     Realiza a coleta de dados da seção de promoções da PlayStation Store.
     
@@ -110,4 +110,4 @@ def scrape_psn(max_pages=5):
         print("[WARN] Nenhum dado foi coletado durante a execução.")
 
 if __name__ == "__main__":
-    scrape_psn(max_pages=5)
+    scrape_psn(max_pages=182)

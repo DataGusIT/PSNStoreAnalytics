@@ -40,8 +40,8 @@ def main():
     sys.stdout = LoggerWriter(log_path)
     
     # --- INÍCIO DO PROCESSO ---
-    # Defina aqui quantas páginas quer ler (para teste use 5, para produção use 182)
-    PAGINAS_PARA_LER = 5 
+    # Defina aqui quantas páginas quer ler
+    PAGINAS_PARA_LER = 182
     
     start_time = time.time()
     
