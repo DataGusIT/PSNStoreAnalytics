@@ -23,13 +23,11 @@ class LoggerWriter:
         self.log.write(message)
 
     def flush(self):
-        # Necessário para compatibilidade com sys.stdout
         self.terminal.flush()
         self.log.flush()
 
 def main():
     # --- CONFIGURAÇÃO DE LOGS ---
-    # Cria o nome do arquivo de log com data/hora: logs/run_2023-12-07_10-30.log
     log_filename = f"run_{datetime.now().strftime('%Y-%m-%d_%H-%M')}.log"
     log_path = os.path.join("logs", log_filename)
     
@@ -40,7 +38,6 @@ def main():
     sys.stdout = LoggerWriter(log_path)
     
     # --- INÍCIO DO PROCESSO ---
-    # Defina aqui quantas páginas quer ler
     PAGINAS_PARA_LER = 182
     
     start_time = time.time()
@@ -56,7 +53,6 @@ def main():
         scraper.scrape_psn(max_pages=PAGINAS_PARA_LER)
     except Exception as e:
         print(f"[CRITICAL ERROR] Falha no módulo de Scraping: {e}")
-        # Se der erro, não queremos parar o log, mas podemos encerrar o script
         sys.exit(1)
 
     # --- STEP 2: ETL ---
