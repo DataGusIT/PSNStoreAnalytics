@@ -7,10 +7,6 @@ __pycache__/
 *.pyc
 .ipynb_checkpoints/
 
-# Ignorar dados (opcional: se quiser versionar os CSVs, remova essas linhas)
-data/
-logs/
-
 # Ignorar arquivos do sistema
 .DS_Store
 Thumbs.db

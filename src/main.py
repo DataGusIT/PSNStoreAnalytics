@@ -16,7 +16,7 @@ class LoggerWriter:
     """
     def __init__(self, filepath):
         self.terminal = sys.stdout
-        self.log = open(filepath, "a", encoding="utf-8") # 'a' para append
+        self.log = open(filepath, "a", encoding="utf-8") 
 
     def write(self, message):
         self.terminal.write(message)

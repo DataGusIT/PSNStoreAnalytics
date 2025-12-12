@@ -1,0 +1,29 @@
+------------------------------------------------------------
+PSN STORE ANALYTICS - AUTOMATION PIPELINE
+Log File: logs\run_2025-12-07_22-03.log
+------------------------------------------------------------
+
+[STEP 1/2] Data Collection (Scraping)
+[INFO] Iniciando processo de scraping. Alvo: https://store.playstation.com/pt-br/category/3f772501-f6f8-49b7-abac-874a88ca4897
+[INFO] Configuração: 5 páginas a serem analisadas.
+[INFO] Processando página 1/5...
+   -> 24 itens capturados.
+[INFO] Processando página 2/5...
+   -> 24 itens capturados.
+[INFO] Processando página 3/5...
+   -> 24 itens capturados.
+[INFO] Processando página 4/5...
+   -> 24 itens capturados.
+[INFO] Processando página 5/5...
+   -> 24 itens capturados.
+[SUCCESS] Coleta finalizada. 118 registros salvos em: data\raw\psn_promo_20251207_2204.csv
+
+[STEP 2/2] Data Processing (ETL)
+[INFO] Iniciando pipeline de ETL (Extract, Transform, Load)...
+[INFO] Processando arquivo: data/raw\psn_promo_20251207_2204.csv
+[SUCCESS] ETL concluído. Dados processados salvos em: data\processed\psn_games_clean.csv
+[SUCCESS] Dados históricos atualizados em: data\database\psn_history_master.csv
+------------------------------------------------------------
+[DONE] Pipeline finalizado com sucesso.
+Tempo total de execução: 55.88 segundos.
+------------------------------------------------------------
