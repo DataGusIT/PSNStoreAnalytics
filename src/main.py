@@ -38,7 +38,7 @@ def main():
     sys.stdout = LoggerWriter(log_path)
     
     # --- INÍCIO DO PROCESSO ---
-    PAGINAS_PARA_LER = 182
+    PAGINAS_PARA_LER = 10
     
     start_time = time.time()
     
