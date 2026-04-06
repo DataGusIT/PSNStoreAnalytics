@@ -7,7 +7,7 @@ from playwright.sync_api import sync_playwright
 # Constante para URL de ofertas da PSN
 BASE_URL_DEALS = "https://store.playstation.com/pt-br/category/3f772501-f6f8-49b7-abac-874a88ca4897"
 
-def scrape_psn(max_pages=10):
+def scrape_psn(max_pages=15):
     """
     Realiza a coleta de dados da seção de promoções da PlayStation Store.
     
@@ -54,6 +54,12 @@ def scrape_psn(max_pages=10):
                         # Filtro primário: descarta elementos sem indicação de preço
                         if "R$" not in text_content and "Gratuito" not in text_content:
                             continue
+
+                        # ---> NOVO FILTRO: Ignorar itens irrelevantes na raiz <---
+                        text_upper = text_content.upper()
+                        if "MOEDA" in text_upper or "POINTS" in text_upper or "COINS" in text_upper or "V-BUCKS" in text_upper:
+                            continue
+                        # ---------------------------------------------------------
 
                         # Extração: Título
                         title_el = card.query_selector("span[data-qa*='game-name']") or card.query_selector(".psw-t-body")
@@ -110,4 +116,4 @@ def scrape_psn(max_pages=10):
         print("[WARN] Nenhum dado foi coletado durante a execução.")
 
 if __name__ == "__main__":
-    scrape_psn(max_pages=10)
+    scrape_psn(max_pages=15) 
